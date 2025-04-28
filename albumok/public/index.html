@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Album Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎵 Album Manager</h1>
+
+  <section>
+    <h2>Új album hozzáadása</h2>
+    <form id="albumForm">
+      <input type="text" id="artist" placeholder="Zenekar neve" required>
+      <input type="text" id="title" placeholder="Album címe" required>
+      <input type="number" id="year" placeholder="Kiadás éve">
+      <input type="text" id="genre" placeholder="Műfaj">
+      <button type="submit">Hozzáadás</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Albumok listája</h2>
+    <ul id="albumList"></ul>
+  </section>
+
+  <script src="app.js"></script> <!-- JavaScript külön fájlban -->
+</body>
+</html>

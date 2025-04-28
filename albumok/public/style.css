@@ -1,0 +1,125 @@
+/* Alapbeállítások */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Főcím */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Szekciók */
+section {
+  background: #ffffff;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+/* Formázás */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+form input {
+  flex: 1 1 250px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f1f5f9;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+form button {
+  background: #4f46e5;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #4338ca;
+}
+
+/* Album lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fefefe;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Bal oldalon az album szöveg */
+.album-info {
+  flex: 1;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Jobb oldalon az akció gombok */
+.album-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Gombok */
+.album-actions button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.album-actions button:hover {
+  color: #4f46e5;
+  transform: scale(1.2);
+}
+
+/* Alert üzenetek (ha akarsz popupot) */
+.alert {
+  background: #e0f7fa;
+  color: #006064;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
